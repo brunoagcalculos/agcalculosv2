@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
 import { useRouter } from 'next/navigation'
+import { Settings } from 'lucide-react'
 import {
   LayoutDashboard,
   Users,
@@ -22,6 +23,7 @@ const nav = [
   { label: 'Financeiro', href: '/financeiro', icon: DollarSign },
   { label: 'Metas',      href: '/metas',      icon: Target },
   { label: 'Relatórios', href: '/relatorios', icon: BarChart2 },
+  { label: 'Cadastro', href: '/cadastro/usuarios', icon: Settings },
 ]
 
 export default function Sidebar() {
