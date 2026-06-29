@@ -228,9 +228,15 @@ export default async function ClienteDetalhePage({
               <Link
                 href={`/financeiro?cliente=${params.id}`}
                 className="block text-sm text-blue-600 hover:underline"
-              >
+                >
                 Ver historico financeiro
               </Link>
+             <Link
+  href={`/clientes/${params.id}/precos`}
+  className="block text-sm text-blue-600 hover:underline"
+>
+  Tabela de precos →
+</Link> 
             </div>
           </div>
         </div>
