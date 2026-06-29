@@ -5,7 +5,7 @@ import { createClient } from '@/lib/supabase/client'
 import Link from 'next/link'
 import { Plus, RefreshCw } from 'lucide-react'
 import ModalProximoPasso from '@/components/processos/ModalProximoPasso'
-
+import MeuAndamento from '@/components/processos/MeuAndamento'
 const STATUS_COR: Record<string, string> = {
   novo: 'bg-slate-100 text-slate-700',
   triagem: 'bg-yellow-100 text-yellow-700',
@@ -168,6 +168,7 @@ export default function ProcessosFila() {
   return (
     <div className="p-6 space-y-4">
       {/* Header */}
+      <MeuAndamento />
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-xl font-semibold text-slate-800">Fila de Processos</h1>
